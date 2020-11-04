@@ -13,7 +13,7 @@ if((CMAKE_HOST_SYSTEM_NAME MATCHES Linux) AND
     message(STATUS "==============================================================")
     message(STATUS "Installation directories for Linux: ")
 
-    set(CMAKE_INSTALL_DOCDIR ${CMAKE_INSTALL_DATAROOTDIR}/doc/${PROJECT_NAME}-${PROJECT_VERSION})
+    set(CMAKE_INSTALL_DOCDIR ${CMAKE_INSTALL_DATAROOTDIR}/doc/${PROJECT_NAME}${PROJECT_VERSION}-doc)
 
 elseif(CMAKE_SYSTEM_NAME MATCHES Windows)
 
@@ -29,7 +29,7 @@ elseif(CMAKE_SYSTEM_NAME MATCHES Windows)
     set(CMAKE_INSTALL_BINDIR bin)
     set(CMAKE_INSTALL_INCLUDEDIR include)
     set(CMAKE_INSTALL_DATAROOTDIR share)
-    set(CMAKE_INSTALL_DOCDIR share/doc/${PROJECT_NAME}-${PROJECT_VERSION})
+    set(CMAKE_INSTALL_DOCDIR share/doc/${PROJECT_NAME}${PROJECT_VERSION}-doc)
 
     message(STATUS "==============================================================")
     message(STATUS "Installation directories for Windows: ")
